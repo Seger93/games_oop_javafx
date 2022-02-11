@@ -30,9 +30,10 @@ public class BishopBlackTest {
         Cell[] expected = new Cell[]{Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         assertThat(cells, is(expected));
     }
+
     @Test
     public void diagonal() {
         BishopBlack bishopBlack =  new BishopBlack(Cell.A1);
-        assertThat(bishopBlack.isDiagonal(Cell.A1, Cell.B1),is(false));
+        assertThat(bishopBlack.isDiagonal(Cell.A1, Cell.B1), is(false));
     }
 }
